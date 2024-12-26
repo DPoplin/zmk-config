@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: module_a_base
+      url-base: https://github.com/DPoplin/shield-module
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: module_a
+      remote: module_a_base
+      revision: main
+  self:
+    path: config
